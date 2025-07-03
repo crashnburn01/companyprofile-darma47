@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'My Laravel App')</title>
     @vite('resources/css/app.css')
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ asset('img/heros-bg-section.jpg') }}') no-repeat center center;
@@ -38,8 +39,26 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-4 text-center">
-            <p>&copy; {{ date('Y') }} CV. Yan Rolle Konstruksi. Semua hak dilindungi.</p>
+            <p>&copy; {{ date('Y') }} CV. Darma 47. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function(){
+            // Pilih semua link yang href-nya dimulai dengan '#'
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.hash); // Dapatkan elemen target dari hash
+                if( target.length ) {
+                    event.preventDefault(); // Mencegah perilaku default
+
+                    // Animasi scroll
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top // Scroll ke posisi atas elemen target
+                    }, 800); // Durasi animasi dalam milidetik (1000ms = 1 detik)
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
