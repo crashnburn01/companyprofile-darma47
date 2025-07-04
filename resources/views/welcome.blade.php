@@ -94,6 +94,7 @@
                     <p class="text-gray-600 max-w-3xl mx-auto text-lg">Kami siap membantu Anda dengan proyek konstruksi Anda. Silakan hubungi kami untuk informasi lebih lanjut.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {{-- Maps --}}
                     <div class="bg-gray-50 p-8 rounded-lg shadow-md">
                         <h2 class="text-2xl font-bold text-gray-800 mb-4">Alamat Kantor</h2>
                         <div class="mb-4">
@@ -101,6 +102,7 @@
                         </div>
                         <p class="text-gray-600">Perumahan Asoka, Jl. Boulevart, Makassar</p>
                     </div>
+                    {{-- Form --}}
                     <div class="bg-gray-50 p-8 rounded-lg shadow-md">
                         <form id="contact-form">
                             <div class="grid grid-cols-1 gap-4">
