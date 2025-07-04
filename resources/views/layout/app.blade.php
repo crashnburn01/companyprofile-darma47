@@ -26,7 +26,6 @@
                 <a href="#about" class="text-gray-700 hover:text-blue-600">Tentang</a>
                 <a href="#services" class="text-gray-700 hover:text-blue-600">Layanan</a>
                 <a href="#portfolio" class="text-gray-700 hover:text-blue-600">Portofolio</a>
-                <a href="#team" class="text-gray-700 hover:text-blue-600">Tim</a>
                 <a href="#contact" class="text-gray-700 hover:text-blue-600">Kontak</a>
             </nav>
         </div>

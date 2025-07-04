@@ -10,7 +10,7 @@
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Terpercaya dan Mewujudkan proyek konstruksi impian anda</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-500 hover:text-white transition-colors flex items-center justify-center space-x-2">Hubungi Kami</a>
-                <a href="" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors">Layanan Lain</a>
+                <a href="" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors">Lebih Lanjut</a>
             </div>
         </div>
     </section>
@@ -83,6 +83,13 @@
                         <p class="text-gray-600">CV. YAN ROLLE KONSTRUKSI memiliki ijin kegiatan Konstruksi Jaringan Irigasi dan Drainase dengan kualifikasi Umum sesuai dengan KBLI 42201 yang mendapat lisensi dari LPJK Kementerian Pekerjaan Umum (PU).</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        {{-- Section Kontak --}}
+        <section id="kontak" class="py-17 bg-white">
+            <div class="container mx-auto px-4">
+
             </div>
         </section>
 @endsection
