@@ -89,7 +89,40 @@
         {{-- Section Kontak --}}
         <section id="kontak" class="py-17 bg-white">
             <div class="container mx-auto px-4">
-
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto text-lg">Kami siap membantu Anda dengan proyek konstruksi Anda. Silakan hubungi kami untuk informasi lebih lanjut.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Alamat Kantor</h2>
+                        <div class="mb-4">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d248.3541058993796!2d119.44178007638538!3d-5.1573815922111494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNcKwMDknMjYuNSJTIDExOcKwMjYnMzAuOCJF!5e0!3m2!1sid!2sid!4v1751610775247!5m2!1sid!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <p class="text-gray-600">Perumahan Asoka, Jl. Boulevart, Makassar</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <form id="contact-form">
+                            <div class="grid grid-cols-1 gap-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium">Nama Lengkap</label>
+                                    <input type="text" id="name" name="name" class="mt-1 block w-full bg-white border border-gray-300 rounded-md py-2 px-3" placeholder="Masukkan nama Anda" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium">Email</label>
+                                    <input type="email" id="email" name="email" class="mt-1 block w-full bg-white border border-gray-300 rounded-md py-2 px-3" placeholder="Masukkan email Anda" required>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium">Pesan</label>
+                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full bg-white border border-gray-300 rounded-md py-2 px-3" placeholder="Tulis pesan Anda" required></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full bg-gray-500 text-white hover:bg-gray-400 hover:text-white font-bold py-2 px-4 rounded-md transition-colors">Kirim Pesan</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
 @endsection
