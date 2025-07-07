@@ -19,7 +19,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="https://example.com/logo.png" alt="Logo PT Konstruksi Mandiri" class="h-10 w-10">
-                <span class="ml-3 text-xl font-bold text-gray-700 hover:text-blue-600">CV DARMA 47</span>
+                <span class="ml-3 text-xl font-bold text-gray-700 hover:text-blue-600"><a href="{{ route('home') }}">CV DARMA 47</a></span>
             </div>
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="text-gray-700 hover:text-blue-600">Beranda</a>
