@@ -86,7 +86,56 @@
             </div>
         </section>
 
-        {{-- Section Kontak --}}
+        {{-- FAQ Section --}}
+<section id="faq" class="py-17 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:4xl font-bold text-gray-800 mb-4">Frequently Asked Question</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto text-lg">Berikut adalah beberapa pertanyaan yang sering diajukan oleh klien kami.</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <div class="space-y-4">
+                <div class="border border-gray-200 rounded-lg p-4 transition-all duration-200">
+                    <button class="flex justify-between items-center w-full text-left font-medium">
+                        <span>Apa jenis proyek yang biasa dikerjakan?</span>
+                        <svg class="h-5 w-5 text-gray-500 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-2 text-gray-600 overflow-hidden transition-all duration-500 ease-in-out">
+                        Kami mengerjakan berbagai jenis proyek konstruksi termasuk gedung komersial, jembatan, dan infastruktur publik.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4 transition-all duration-200">
+                    <button class="flex justify-between items-center w-full text-left font-medium">
+                        <span>Berapa lama waktu pengerjaan yang dibutuhkan?</span>
+                        <svg class="h-5 w-5 text-gray-500 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-2 text-gray-600 overflow-hidden transition-all duration-500 ease-in-out">
+                        Waktu penyelesaian tergantung pada skala dan kompleksitas proyek. Kami akan memberikan estimasi setelah melakukan penilaian.
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-4 transition-all duration-200">
+                    <button class="flex justify-between items-center w-full text-left font-medium">
+                        <span>Lorem Ipsum Dolor Sit Amet</span>
+                        <svg class="h-5 w-5 text-gray-500 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content mt-2 text-gray-600 overflow-hidden transition-all duration-500 ease-in-out">
+                        Lorem Ipsum Dolor Sit Amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        {{-- Kontak Section --}}
         <section id="kontak" class="py-17 bg-white">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-16">
