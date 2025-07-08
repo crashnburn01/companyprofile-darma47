@@ -6,6 +6,8 @@
     <title>@yield('title', 'My Laravel App')</title>
     @vite('resources/css/app.css')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <style>
         .hero-bg {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('{{ asset('img/heros-bg-section.jpg') }}') no-repeat center center;
@@ -14,19 +16,24 @@
     </style>
 </head>
 <body class="font-sans bg-gray-50">
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center">
                 <img src="https://example.com/logo.png" alt="Logo PT Konstruksi Mandiri" class="h-10 w-10">
-                <span class="ml-3 text-xl font-bold text-gray-700 hover:text-blue-600"><a href="{{ route('home') }}">CV DARMA 47</a></span>
+                <span class="ml-3 text-xl font-bold text-gray-700 hover:text-gray-500 transition-colors"><a href="{{ route('home') }}">CV DARMA 47</a></span>
             </div>
             <nav class="hidden md:flex space-x-8">
-                <a href="#home" class="text-gray-700 hover:text-blue-600">Beranda</a>
-                <a href="#about" class="text-gray-700 hover:text-blue-600">Tentang</a>
-                <a href="#services" class="text-gray-700 hover:text-blue-600">Layanan</a>
-                <a href="#portfolio" class="text-gray-700 hover:text-blue-600">Portofolio</a>
-                <a href="#kontak" class="text-gray-700 hover:text-blue-600">Kontak</a>
+                <a href="{{ route('home') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Beranda</a>
+                <a href="{{ route('about') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Tentang</a>
+                <a href="{{ route('service') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Layanan</a>
+                <a href="{{ route('galeri') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Galeri</a>
+                <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Kontak</a>
             </nav>
         </div>
     </header>
@@ -42,6 +49,9 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
     <script>
         $(document).ready(function(){
             // Pilih semua link yang href-nya dimulai dengan '#'
@@ -55,6 +65,9 @@
                         scrollTop: target.offset().top // Scroll ke posisi atas elemen target
                     }, 800); // Durasi animasi dalam milidetik (1000ms = 1 detik)
                 }
+            });
+            $(window).on('load', function() {
+                $('#preloader').addClass('hidden');
             });
         });
     </script>
@@ -92,6 +105,22 @@
                 // Toggle kelas untuk memutar ikon panah
                 icon.classList.toggle('rotate-180');
             });
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('.zoom-gallery-item').magnificPopup({
+            type: 'image', // Menentukan tipe konten adalah gambar
+            closeOnContentClick: true, // Menutup pop-up saat mengklik gambar
+            mainClass: 'mfp-img-mobile', // Kelas CSS tambahan untuk styling mobile
+            image: {
+                verticalFit: true // Gambar akan secara otomatis menyesuaikan ukuran vertikal
+            },
+            gallery: {
+                enabled: false // Set ke true jika Anda ingin membuat galeri yang bisa dinavigasi
+            }
         });
     });
 </script>

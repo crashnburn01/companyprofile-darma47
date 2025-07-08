@@ -10,7 +10,7 @@
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Terpercaya dan Mewujudkan proyek konstruksi impian anda</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="{{ route('kontak') }}" class="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-500 hover:text-white transition-colors flex items-center justify-center space-x-2">Hubungi Kami</a>
-                <a href="" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors">Lebih Lanjut</a>
+                <a href="#kontak" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-black transition-colors">Lebih Lanjut</a>
             </div>
         </div>
     </section>
