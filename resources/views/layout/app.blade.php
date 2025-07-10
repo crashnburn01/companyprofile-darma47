@@ -124,5 +124,24 @@
     });
 </script>
 
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.remove("hidden");
+        } else {
+            scrollTopBtn.classList.add("hidden");
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
 </body>
 </html>
