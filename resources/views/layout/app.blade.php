@@ -31,7 +31,6 @@
             <nav class="hidden md:flex space-x-8">
                 <a href="{{ route('home') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Beranda</a>
                 <a href="{{ route('about') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Tentang</a>
-                <a href="{{ route('service') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Layanan</a>
                 <a href="{{ route('galeri') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Galeri</a>
                 <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Kontak</a>
             </nav>

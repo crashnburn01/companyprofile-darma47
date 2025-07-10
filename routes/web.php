@@ -10,10 +10,6 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
-Route::get('/service', function () {
-    return view('service');
-})->name('service');
-
 Route::get('/hubungi-kami', function () {
     return view('contact');
 })->name('kontak');
