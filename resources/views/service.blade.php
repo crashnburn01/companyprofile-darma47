@@ -7,7 +7,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Layanan</h2>
-                <p class="max-w-3xl mx-auto text-lg">Under Maintenence</p>
+                <p class="max-w-3xl mx-auto text-lg">On Construction</p>
             </div>
         </div>
     </section>
