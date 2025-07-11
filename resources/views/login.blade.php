@@ -49,27 +49,27 @@
                             placeholder="Enter your password"
                             required>
                         <div class="flex justify-end mt-1">
-                            <a href="#" class="text-sm text-blue-600 hover:text-blue-500">Forgot password?</a>
+                            <a href="#" class="text-sm text-gray-600 hover:text-gray-500">Forgot password?</a>
                         </div>
                     </div>
                     
                     <button 
                         type="submit"
-                        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-150">
+                        class="w-full bg-gray-400 text-white py-2 px-4 rounded-md hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition duration-150">
                         Sign In
                     </button>
                 </form>
                 
                 <div class="mt-6 text-center">
                     <p class="text-gray-600">Don't have an account? 
-                        <a href="#" class="text-blue-600 hover:text-blue-500 font-medium">Register</a>
+                        <a href="#" class="text-gray-600 hover:text-gray-500 font-medium">Register</a>
                     </p>
                 </div>
             </div>
         </div>
         
-        <div class="mt-6 text-center text-gray-500 text-xs">
-            <p>&copy; 2023 Your Company. All rights reserved.</p>
+        <div class="mt-6 text-center text-gray-50 text-xs">
+            <p>&copy; {{ date('Y') }} CV DARMA 47. All rights reserved.</p>
         </div>
     </div>
     
