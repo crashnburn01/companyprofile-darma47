@@ -17,3 +17,7 @@ Route::get('/hubungi-kami', function () {
 Route::get('/galeri', function () {
     return view('galeri');
 })->name('galeri');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');

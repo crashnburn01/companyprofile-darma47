@@ -25,19 +25,19 @@
                             <svg class="h-5 w-5 text-gray-800 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-800">15+ Tahun Pengalaman</span>
+                            <span class="text-gray-800"><b>15+</b> Tahun Pengalaman</span>
                         </div>
                         <div class="flex items-start">
                             <svg class="h-5 w-5 text-gray-800 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-800">100+ Proyek Rampung</span>
+                            <span class="text-gray-800"><b>100+</b> Proyek Rampung</span>
                         </div>
                         <div class="flex items-start">
                             <svg class="h-5 w-5 text-gray-800 mt-1 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                             </svg>
-                            <span class="text-gray-800">20+ Staff Profesional</span>
+                            <span class="text-gray-800"><b>20+</b> Staff Profesional</span>
                         </div>
                     </div>
                 </div>
@@ -58,12 +58,12 @@
             </div>
             <div class="md:w-1/2">
                 <div class="bg-white p-8 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Nilai Inti</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Layanan Kami:</h3>
                     <ul class="list-disc list-inside text-gray-600 mb-4">
-                        <li>Keberlanjutan: Kami berkomitmen untuk praktik konstruksi yang ramah lingkungan.</li>
-                        <li>Inovasi: Kami selalu mencari cara baru untuk meningkatkan efisiensi dan kualitas.</li>
-                        <li>Keamanan: Keselamatan pekerja dan klien adalah prioritas utama kami.</li>
-                        <li>Integritas: Beroperasi dengan transparansi dan kejujuran dalam semua aspek bisnis kami.</li>
+                        <li>Pembangunan Gedung: Membangun gedung perkantoran, hunian, dan fasilitas umum.</li>
+                        <li>Renovasi dan Perbaikan: Perbaikan struktur dan tampilan bangunan.</li>
+                        <li>Pembangunan Infrastruktur: Mengerjakan jalan, jembatan, saluran air, dan fasilitas publik.</li>
+                        <li>Manajemen Proyek: Tahapan proyek konstruksi, dari perencanaan hingga penyelesaian.</li>
                     </ul>
                 </div>
             </div>
