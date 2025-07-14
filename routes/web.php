@@ -31,4 +31,9 @@ Route::prefix('admin')->group(function () {
         // Cocok dengan URL: /admin
         return view('admin.index');
     })->name('dashboard');
+
+    Route::get('/tes', function () {
+        // Cocok dengan URL: /admin
+        return view('admin.tes');
+    })->name('tes');
 });

@@ -68,13 +68,13 @@
                 <!-- Navigation -->
                 <ul class="space-y-2">
                     <li>
-                        <a href="#" class="flex items-center p-2 rounded-lg bg-gray-400">
+                        <a href="{{ route('dashboard') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('dashboard') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
                             <i class="fas fa-tachometer-alt w-6"></i>
                             <span class="nav-text ml-3">Dashboard</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400 transition-colors">
+                        <a href="{{ route('tes') }}" class="flex items-center p-2 rounded-lg transition-colors {{ request()->routeIs('tes') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
                             <i class="fas fa-users w-6"></i>
                             <span class="nav-text ml-3">Users</span>
                         </a>
