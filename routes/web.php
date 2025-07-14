@@ -21,3 +21,14 @@ Route::get('/galeri', function () {
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
+// Route::get('/dashboard', function () {
+//     return view('layout.admin');
+// })->name('dashboard');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', function () {
+        // Cocok dengan URL: /admin
+        return view('layout.admin');
+    })->name('dashboard');
+});
