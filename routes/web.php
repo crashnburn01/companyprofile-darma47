@@ -29,6 +29,6 @@ Route::get('/login', function () {
 Route::prefix('admin')->group(function () {
     Route::get('/dashboard', function () {
         // Cocok dengan URL: /admin
-        return view('layout.admin');
+        return view('admin.index');
     })->name('dashboard');
 });
