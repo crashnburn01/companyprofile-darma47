@@ -73,15 +73,15 @@
                 </li>
                 <li>
                     <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
-                        <i class="fas fa-shopping-cart w-6"></i>
-                        <span class="nav-text ml-3">Products</span>
-                        <span class="ml-auto bg-blue-600 text-xs px-2 py-1 rounded-full">15</span>
+                        <i class="fa-solid fa-images w-6"></i>
+                        <span class="nav-text ml-3">Content</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
-                        <i class="fas fa-chart-line w-6"></i>
-                        <span class="nav-text ml-3">Analytics</span>
+                        <i class="fas fa-shopping-cart w-6"></i>
+                        <span class="nav-text ml-3">Products</span>
+                        <span class="ml-auto bg-blue-600 text-xs px-2 py-1 rounded-full">15</span>
                     </a>
                 </li>
                 <li>
