@@ -1,3 +1,5 @@
+{{-- Contoh Website --}}
+
 <!DOCTYPE html>
 <html lang="id" class="dark">
 <head>
