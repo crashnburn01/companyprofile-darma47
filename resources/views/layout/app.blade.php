@@ -18,7 +18,11 @@
 <body class="font-sans bg-gray-50">
 
     <div id="preloader">
-        <div class="spinner"></div>
+        <div class="three-body">
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+        </div>
     </div>
 
     <!-- Header -->
@@ -66,11 +70,17 @@
                     }, 800); // Durasi animasi dalam milidetik (1000ms = 1 detik)
                 }
             });
-            $(window).on('load', function() {
-                $('#preloader').addClass('hidden');
-            });
         });
     </script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            const preloader = document.getElementById('preloader');
+            preloader.classList.add('hidden');
+        }, 800); // Hilang setelah 0.3 detik DOM siap
+    });
+</script>
 
 <script>
     document.addEventListener('DOMContentLoaded', function(){
