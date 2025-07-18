@@ -20,7 +20,7 @@ class AuthController extends Controller
             $request->session()->regenerate();
             return redirect()->route('dashboard')->with('success', 'Berhasil masuk ke dashboard!');
         }
-        
+        //dd('Auth::attempt gagal', $credentials);
         return back()->withErrors('error', 'Username atau Password Salah!');
     }
 

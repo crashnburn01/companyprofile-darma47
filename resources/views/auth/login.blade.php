@@ -35,9 +35,6 @@
                             </div>
                         </div>
                     @endif
-                    @if(session('login_success'))
-                        <div>Berhasil Login!</div>
-                    @endif
 
                     <!-- Floating Username -->
                     <div class="relative w-full mb-6">
