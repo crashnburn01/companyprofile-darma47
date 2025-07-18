@@ -37,7 +37,7 @@
                 <a href="{{ route('about') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Tentang</a>
                 <a href="{{ route('galeri') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Galeri</a>
                 <a href="{{ route('kontak') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Kontak</a>
-                <a href="{{ route('dashboard') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Tes</a>
+                <a href="{{ route('login') }}" class="text-gray-700 hover:text-gray-500 transition-colors">Tes</a>
             </nav>
         </div>
     </header>

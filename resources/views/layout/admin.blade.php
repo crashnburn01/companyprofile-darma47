@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
+                    <a href="{{ route('content.index') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('content.index') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
                         <i class="fa-solid fa-images w-6"></i>
                         <span class="nav-text ml-3">Content</span>
                     </a>
@@ -100,7 +100,7 @@
             </ul>
         </div>
         <div class="absolute bottom-0 w-full p-4 border-t border-gray-500">
-            <a href="{{ route('home') }}" class="flex items-center p-2 rounded-lg hover:bg-gray-700">
+            <a href="{{ route('logout') }}" class="flex items-center p-2 rounded-lg hover:bg-gray-700">
                 <i class="fas fa-sign-out-alt w-6"></i>
                 <span class="nav-text ml-3">Logout</span>
             </a>
@@ -124,7 +124,7 @@
                         <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Profile</a>
                         <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-100">Settings</a>
                         <div class="border-t border-gray-200"></div>
-                        <a href="{{ route('home') }}" class="block px-4 py-2 text-sm hover:bg-gray-100">Logout</a>
+                        <a href="{{ route('logout') }}" class="block px-4 py-2 text-sm hover:bg-gray-100">Logout</a>
                     </div>
                 </div>
             </div>

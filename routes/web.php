@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,15 +19,13 @@ Route::get('/galeri', function () {
     return view('galeri');
 })->name('galeri');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+// Auth
+Route::get('/login', [AuthController::class, 'showLoginForm'])->middleware('guest')->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-// Route::get('/dashboard', function () {
-//     return view('layout.admin');
-// })->name('dashboard');
-
-Route::prefix('admin')->group(function () {
+// Admin Routes
+Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         // Cocok dengan URL: /admin
         return view('admin.index');
@@ -36,4 +35,9 @@ Route::prefix('admin')->group(function () {
         // Cocok dengan URL: /admin
         return view('admin.tes');
     })->name('tes');
+
+    Route::get('/content', function () {
+        // Cocok dengan URL: /admin
+        return view('admin.content.index');
+    })->name('content.index');
 });

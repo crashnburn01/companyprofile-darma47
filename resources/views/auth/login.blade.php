@@ -26,12 +26,24 @@
             </div>
 
             <div class="p-8">
-                <form>
+                <form action="{{ route('login.submit') }}" method="POST">
+                    @csrf
+                    @if ($errors->any())
+                        <div class="mb-4">
+                            <div class="text-red-600 text-sm">
+                                {{ $errors->first() }}
+                            </div>
+                        </div>
+                    @endif
+                    @if(session('login_success'))
+                        <div>Berhasil Login!</div>
+                    @endif
+
                     <!-- Floating Username -->
                     <div class="relative w-full mb-6">
                         <input 
                             type="text" 
-                            id="username"
+                            name="username"
                             required
                             class="peer w-full p-2 pl-3 text-black text-base bg-transparent outline-none border-l-2 border-b-2 border-black transition duration-100 rounded-bl-lg"
                         />
@@ -48,7 +60,7 @@
                     <div class="relative w-full mb-6">
                         <input 
                             type="password" 
-                            id="password"
+                            name="password"
                             required
                             class="peer w-full p-2 pl-3 text-black text-base bg-transparent outline-none border-l-2 border-b-2 border-black transition duration-100 rounded-bl-lg"
                         />
@@ -94,7 +106,7 @@
         </div>
     </div>
 
-    <script>
+    {{-- <script>
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
             const username = document.getElementById('username').value;
@@ -104,6 +116,7 @@
                 alert('Login successful! (This is a demo)');
             }
         });
-    </script>
+    </script> --}}
+
 </body>
 </html>
