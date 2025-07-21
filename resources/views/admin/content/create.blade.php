@@ -32,7 +32,7 @@
 
                 <div>
                     <label for="status" class="block text-sm font-medium text-gray-700">Status</label>
-                    <select id="status" name="status" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-blue-500 focus:border-blue-500">
+                    <select id="status" name="status" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500 appearance-none">
                         <option value="" disabled selected>Pilih Status</option>
                         <option value="terverifikasi">Terverifikasi</option>
                         <option value="belum_diverifikasi">Belum Diverifikasi</option>
