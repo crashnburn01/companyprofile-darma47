@@ -66,13 +66,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('tes') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('tes') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
+                    <a href="{{ route('user.index') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('user.*') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
                         <i class="fas fa-users w-6"></i>
                         <span class="nav-text ml-3">Users</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('content.index') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('content.index') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
+                    <a href="{{ route('content.index') }}" class="flex items-center p-2 rounded-lg {{ request()->routeIs('content.*') ? 'bg-gray-400 text-white' : 'hover:bg-gray-400' }}">
                         <i class="fa-solid fa-images w-6"></i>
                         <span class="nav-text ml-3">Content</span>
                     </a>

@@ -31,14 +31,14 @@
                 <tbody class="bg-white divide-y divide-gray-200">
                     <tr>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">#USR-001</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Admin</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">Admin</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <div class="flex items-center">
                                 <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a2b5e6d2-3c32-4ea0-b967-4fc7e45b1ca7.png" alt="Headshot of middle-aged male customer with glasses" class="h-8 w-8 rounded-full mr-2">
                                 <span>John Doe</span>
                             </div>
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">admin@gmail.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">admin@gmail.com</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">Administrator</span>
                         </td>

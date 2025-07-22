@@ -41,7 +41,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/tes', function () {
         // Cocok dengan URL: /admin
         return view('admin.user.tes');
-    })->name('tes');
+    })->name('user.index');
 
     Route::get('/add-user', function () {
         // Cocok dengan URL: /admin
