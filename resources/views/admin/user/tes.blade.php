@@ -9,7 +9,7 @@
         <div class="bg-white rounded-xl shadow-md p-6 mb-6">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl font-semibold">Daftar User</h2>
-            <a href="">
+            <a href="{{ route('user.create') }}">
                 <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">+ Tambah User</button>
             </a>
             
@@ -20,9 +20,10 @@
                 <thead>
                     <tr>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID User</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama User</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Username</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Role</th>
-                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tgl Regis</th>
                         <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                         <th class="px-6 py-3 text-center text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
                     </tr>
@@ -30,14 +31,17 @@
                 <tbody class="bg-white divide-y divide-gray-200">
                     <tr>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">#USR-001</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Admin</td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <div class="flex items-center">
                                 <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a2b5e6d2-3c32-4ea0-b967-4fc7e45b1ca7.png" alt="Headshot of middle-aged male customer with glasses" class="h-8 w-8 rounded-full mr-2">
                                 <span>John Doe</span>
                             </div>
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Admin</td>
-                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">23 Mei 2025</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">admin@gmail.com</td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm">
+                            <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">Administrator</span>
+                        </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm">
                             <span class="px-2 py-1 text-xs rounded-full bg-green-100 text-green-800">Terverifikasi</span>
                         </td>

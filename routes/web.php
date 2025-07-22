@@ -32,7 +32,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         return view('admin.index');
     })->name('dashboard');
 
-    Route::get('/add-user', function () {
+    Route::get('/add-content', function () {
         // Cocok dengan URL: /admin
         return view('admin.content.create');
     })->name('content.create');
@@ -42,6 +42,11 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         // Cocok dengan URL: /admin
         return view('admin.user.tes');
     })->name('tes');
+
+    Route::get('/add-user', function () {
+        // Cocok dengan URL: /admin
+        return view('admin.user.create');
+    })->name('user.create');
 
     Route::get('/content', function () {
         // Cocok dengan URL: /admin

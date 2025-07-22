@@ -16,7 +16,7 @@
                 </div>
 
                 <div>
-                    <label for="title" class="block text-sm font-medium text-gray-700">Nama User</label>
+                    <label for="title" class="block text-sm font-medium text-gray-700">Username</label>
                     <input type="text" id="title" name="title" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan Judul Content">
                 </div>
 
