@@ -9,7 +9,10 @@
         <div class="bg-white rounded-xl shadow-md p-6 mb-6">
         <div class="flex justify-between items-center mb-6">
             <h2 class="text-xl font-semibold">Daftar User</h2>
-            <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">+ Tambah User</button>
+            <a href="">
+                <button class="text-blue-600 hover:text-blue-800 text-sm font-medium">+ Tambah User</button>
+            </a>
+            
         </div>
 
         <div class="overflow-x-auto">

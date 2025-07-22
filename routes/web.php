@@ -40,7 +40,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
     Route::get('/tes', function () {
         // Cocok dengan URL: /admin
-        return view('admin.tes');
+        return view('admin.user.tes');
     })->name('tes');
 
     Route::get('/content', function () {
