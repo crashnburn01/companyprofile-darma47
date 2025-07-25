@@ -78,6 +78,12 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ route('setting.index') }}" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
+                        <i class="fas fa-cog w-6"></i>
+                        <span class="nav-text ml-3">Settings</span>
+                    </a>
+                </li>
+                <li>
                     <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
                         <i class="fas fa-shopping-cart w-6"></i>
                         <span class="nav-text ml-3">Products</span>
@@ -89,12 +95,6 @@
                         <i class="fas fa-envelope w-6"></i>
                         <span class="nav-text ml-3">Messages</span>
                         <span class="ml-auto bg-red-500 text-xs px-2 py-1 rounded-full">5</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="flex items-center p-2 rounded-lg hover:bg-gray-400">
-                        <i class="fas fa-cog w-6"></i>
-                        <span class="nav-text ml-3">Settings</span>
                     </a>
                 </li>
             </ul>

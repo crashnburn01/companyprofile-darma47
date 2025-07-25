@@ -52,4 +52,9 @@ Route::prefix('admin')->middleware('auth')->group(function () {
         // Cocok dengan URL: /admin
         return view('admin.content.index');
     })->name('content.index');
+
+    Route::get('/settings', function () {
+        // Cocok dengan URL: /settings
+        return view('admin.settings.index');
+    })->name('setting.index');
 });
